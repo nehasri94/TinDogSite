@@ -1,0 +1,201 @@
+body {
+    font-family: "Montserrat" ;
+    text-align: center;
+}
+
+.container-fluid {
+    /* padding : 3% 15% 7%; */
+    padding: 7% 15%;
+   }
+
+   /* Sections */
+
+   .colored-section {
+    background-color:#ff4c68;
+    color: #fff;
+   }
+    .white-section {
+        background-color: #fff;
+    }
+/* Heading section */
+
+.big-heading {
+    font-family : "Montserrat";
+    font-size : 3.5rem;
+    line-height : 1.5;
+    font-weight : 900;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5; 
+}
+
+/* Multiple selectors */
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+p {
+    color: #8f8f8f;
+    font-weight: bold;
+    font-family: "Ubuntu";
+}
+
+
+/* Navigation bar */
+
+.navbar-brand {
+ font-family: "Ubuntu";
+ font-size: 2.5rem;
+ font-weight: bold;
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.nav-item {
+    padding : 0 18px;
+}
+
+.nav-link {
+font-family: "Montserrat";
+font-size: 1.2rem;
+font-weight: lighter;
+}
+
+/* Title-Image and title section */
+
+
+/* #title {
+    /* background-color:#ff4c68;
+    color: #fff; 
+    text-align: left;
+} */
+
+/* Combining selectors...here while refractoring code we put all the padding inside the container fluid by giving it as a class to all the necessary elements but we want to have a diff padding for title section hence we choose that by using id selector and then applied diff padding to its class selector (.container-fluid) */
+#title .container-fluid{
+    padding : 3% 15% 7%;
+    text-align: left;
+}
+
+.title-image {
+    width : 60%;
+    transform : rotate(25deg);
+    position : absolute;
+    right: 30%;
+}
+
+/* Download buttons */
+
+.download-button {
+margin: 5% 3% 5% 0;
+}
+
+
+
+/* Section features */
+
+#features {
+ /* padding : 7% 15%; */
+ /* background-color: #fff; */
+ position : relative;
+}
+
+.feature-box {
+ 
+    padding : 4.5%;
+}
+
+.feature-heading {
+    font-size: 1.5rem;
+}
+.icon {
+    color : #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon :hover {
+color: #ff4c68;
+}
+
+/* Testimonials section */
+
+#testimonials {
+    /* padding : 7% 15%; we remove this from here and add to carousel-item so that the prev and next buttons are spaced out from the testimonial text*/
+    
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin : 20px;
+}
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/* Press section */
+#press {
+    background-color: #ef8172;
+    
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin : 20px 20px 50px;
+}
+
+/* .carousel-item {
+    padding : 7% 15%;
+} */
+
+/* Pricing section */
+#pricing {
+    padding : 100px;
+  
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.pricing-column {
+    padding : 3% 2%;
+}
+/* In Tindog, we need to straighten the dog image and make everything centrally alligned and make its position as static when the viewport size is 1028px or below that. */
+
+@media (max-width : 1028px)
+{
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+/* Cta and footer section */
+
+/* #cta {
+   
+    background-color: #ff4c68;
+    color: #fff;
+    /* padding : 7% 15%; 
+} */
+
+/* #footer {
+  
+    padding : 7% 15%;
+} */
+.social-icon {
+margin : 20px 10px;
+}
